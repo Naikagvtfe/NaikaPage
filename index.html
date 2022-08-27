@@ -6,32 +6,38 @@
     <title>連結轉運站</title>
     <link rel="shortcut icon" href="image/favicons.png">
     <style type="text/css">
-    <!--#Footer{
-    background:rgba(255,255,255,1);
-    width: 100%;
-    height: 50px;
-    margin-left:0px;
-    bottom:0px;
-    text-align:center;
-    position:fixed;}-->
-    
-    <!--#body{
+    <!--#sitebody{
     background:rgba(0,0,0,1);
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;}
+    
+    #header{
     text-align:center;
+    top:0px;
+    left:0px;
+    position:relative;}
+    
+    #content{
+    height:100%;
+    width:100%;
     overflow:auto;
-    position:fixed;}-->
-    
-    <!--#Video_background{
     background:rgba(0,0,0,1);
-    width: 100%;
-    height: 100%;
-    text-align:center;
-    overflow:false;
-    position:relative;}-->
+    text-align:center;}
     
-    <!--#DIV_small1{
+    #footer{
+    clear:both;
+    background:rgba(255,255,255,1);
+    height:50px;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    bottom:0px;
+    left:0px;}
+    
+    #DIV_small1{
     background:rgba(0,0,0,1);
     width: 100%;
     height: 10%;
@@ -40,11 +46,17 @@
     margin-top:50px;
     text-align:center;
     overflow:auto;
+    position:relative;}
+    
+    #Video_background{
+    background:rgba(0,0,0,1);
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    overflow:false;
     position:relative;}-->
     
     <style>
-    .p {
-    text-align:center;}
     
     .videobox {
     background:rgba(0,0,0,0);
@@ -60,25 +72,11 @@
     margin-left:-35%;
     width: 70%;
     height: 70%;}</style>
-
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="reveal/dist/reset.css">
-    <link rel="stylesheet" href="reveal/dist/reveal.css">
-    <link rel="stylesheet" href="reveal/dist/theme/black.css" id="theme">
-
-    <link rel="stylesheet" href="reveal/plugin/highlight/monokai.css" id="highlight-theme">
 </head>
 <body>
-<div class="p"><img src = "image/image.png" width = "100%"></div>
-<div id="body">
-<div id = "DIV_small1">
+<div id="sitebody">
+    <div id="header"><img src = "image/image.png" width = "100%"></div>
+    <div id="content"><div id = "DIV_small1">
         <!--<input type="button" value="我要委託精華" onclick="location.href='https://naikagvtfe.github.io/Vedio_URL/entrust.html'" style="background:rgba(100,100,100,1);width:200px;height:50px;font-size:30px;color:rgba(255,255,255,1);border-radius:10px;">-->
 </div>
     <div style = "text-align:center;font-size:50px;color:#ffffff;">最新影片</div>
@@ -87,33 +85,13 @@
             <iframe frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLp2bL7W4kG0E4dpcyO1WytC4CgOonU-0N" allowFullScreen="true">
             </iframe>
         </div>
-    </div>
-    <div id="Footer">
+    </div></div>
+    <div id="footer">
         <a href = "https://www.youtube.com/channel/UCBhSXkzFQP-925QUaaFi03A"><img src = "image/naika_logo.png" width = "50px"></a>
         <a href = "https://www.youtube.com/channel/UCM42DxZpt3CmCERUIjO8_Rg"><img src = "image/latte_logo.png" width = "50px"></a>
         <a href = "https://twitter.com/Naika_Gvtfe"><img src = "image/twitter_logo.png" width = "50px"></a>
         <a href = "https://www.twitch.tv/gvtfe/about"><img src = "image/twitch_logo(2).png" width = "40px"></a>
-        </div>
     </div>
-    <script>
-        // Also available as an ES module, see:
-        // https://revealjs.com/initialization/
-        Reveal.initialize({
-            width: "100%", height: "100%",
-            controls: false,
-            progress: false,
-            center: false,
-            hash: false,
-            touch: true, 
-            mouseWheel: true, 
-            transitionSpeed: "slow", // default/fast/slow
-            transition: "slide", // none/fade/slide/convex/concave/zoom
-            slideNumber: true, 
-
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
-        });
-
-    </script>
+</div>
 </body>
 </html>
