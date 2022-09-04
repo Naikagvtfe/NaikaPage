@@ -49,21 +49,38 @@
     position:relative;}
     
     #Video_background{
-    background:rgba(0,0,0,1);
+    background:rgba(200,200,200,0);
+    margin-bottom:50px;
+    margin-top:50px;
+    border-radius:30px;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align:center;
+    margin-bottom:200px;
     overflow:false;
     position:relative;}
     
-    #twitter_background{
-    background:rgba(255,255,255,0);
+    #twitter{
+    background:rgba(200,200,200,0);
     width: 80%;
     height: 600px;
     text-align:center;
     overflow:false;
     margin:0px auto;
     position:relative;}
+    
+    #twitter_background{
+    background:rgba(200,200,200,0);
+    margin-bottom:50px;
+    margin-top:50px;
+    border-radius:30px;
+    width: 100%;
+    height: auto;
+    text-align:center;
+    overflow:false;
+    margin:0px auto;
+    position:relative;}
+    
     
     #Sidebar{
     width:20%;
@@ -88,15 +105,16 @@
     text-align:center;}    
 
     .videobox {
-    background:rgba(0,0,255,0);
+    background:rgba(200,200,200,0);
     position: relative;
+    border-radius:30px;
     width: 100%;
-    height: 0px;
+    height: auto;
     padding-bottom: 56.25%;}
 
     .videobox iframe {
     position: absolute;
-    top:0;
+    top:0px
     left:50%;
     margin-left:-35%;
     width: 70%;
@@ -141,11 +159,12 @@
         <!--<div id = "DIV_small1">
         <input type="button" value="我要委託精華" onclick="location.href='https://naikagvtfe.github.io/Vedio_URL/entrust.html'" style="background:rgba(100,100,100,1);width:200px;height:50px;font-size:30px;color:rgba(255,255,255,1);border-radius:10px;">
 </div>-->
-<div style = "text-align:center;font-size:4.5vw;color:#ffffff;">最新貼文</div>
     <div id = "twitter_background">
-    <a class="twitter-timeline" data-width="100%" data-height="600" data-theme="dark" href="https://twitter.com/Naika_Gvtfe?ref_src=twsrc%5Etfw">Tweets by Naika_Gvtfe</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-    <div style = "text-align:center;font-size:4.5vw;color:#ffffff;">最新影片</div>
+    <div style = "text-align:center;font-size:4.5vw;color:#ffffff;">最新貼文</div>
+    <div id = "twitter">
+    <a class="twitter-timeline" data-width="100%" data-height="600" data-theme="dark" href="https://twitter.com/Naika_Gvtfe?ref_src=twsrc%5Etfw">Tweets by Naika_Gvtfe</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></div>
     <div id="Video_background">
+    <div style = "text-align:center;font-size:4.5vw;color:#ffffff;">最新影片</div>
         <div class="videobox">
             <iframe frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLp2bL7W4kG0E4dpcyO1WytC4CgOonU-0N" allowFullScreen="true">
             </iframe>
