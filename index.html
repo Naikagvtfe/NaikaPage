@@ -50,26 +50,14 @@
     transform: translate(-50%);
     position:relative;}
     
-    #twitter{
-    background:rgba(200,200,200,0);
-    width: 80%;
-    height: 800px;
-    text-align:center;
-    overflow:false;
-    margin:0px auto;
-    position:relative;}
-    
    #Social_link_background{
     height:auto;
     width:auto;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.1);
     border-radius:30px;
-    bottom:10px;
     position: relative; 
-    left: 50%;
-    transform: translate(-50%);
-    display:flex;
-    position:absolute;}
+    flex-wrap: wrap;
+    display:flex;}
     
    #entrust{
     background:rgba(255,0,0,0);
@@ -103,24 +91,32 @@
     border-radius:50px;
     width: 50px;
     height: 50px;
-    margin:15px;
+    margin:5px auto;
     overflow:false;
     padding:15px;
-    position:relative;}
+    position:static;}
     
     .Logo_image{
     background:rgba(255,255,255,0);
     position: relative;
     top: 50%;  
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow:false;
-    position:relative;}</style>
+    transform: translate(-50%, -50%);}</style>
 
 </head>
 <body>
 <div id="sitebody">
     <div id="content">
+        <div style = "text-align:center;font-size:4.5vw;color:#000000;">我的連結</div>
+        <div id="background"><div id="Social_link_background">
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.youtube.com/channel/UCBhSXkzFQP-925QUaaFi03A"><img src = "image/naika_logo(2).png" width = "100%" title = "YouTube主頻道"></a></div></div>
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.youtube.com/channel/UCM42DxZpt3CmCERUIjO8_Rg"><img src = "image/latte_logo(3).png" width = "100%"title = "YouTube精華頻道"></a></div></div>
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://twitter.com/Naika_Gvtfe"><img src = "image/twitter_logo(2).png" width = "100%"title = "Twitter"></a></div></div>
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.plurk.com/m/Naika_Gvtfe"><img src = "image/plurk_logo.png" width = "100%"title = "噗浪"></a></div></div>
+                <!--<div class = "Logo"><div class = "Logo_image"><a href = "https://misskey.io/@Naika_Gvtfe"><img src = "image/misskey_logo.png" width = "100%"title = "MissKey"></a></div></div>-->
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.twitch.tv/naika_gvtfe/about"><img src = "image/twitch_logo(2).png" width = "100%"title = "Twitch"></a></div></div>
+                <div class = "Logo"><div class = "Logo_image"><a href = "https://discord.gg/mZhC2ECgDc"><img src = "image/discord_logo.png" width = "100%"title = "我的Discord群"></a></div></div>
+        </div></div>
     <div style = "text-align:center;font-size:4.5vw;color:#000000;">最新影片</div>
     <div id="background">
         <div class="videobox">
@@ -128,29 +124,6 @@
             </iframe>
         </div>
     </div>
-    <div style = "text-align:center;font-size:4.5vw;color:#000000;">播放清單</div>
-    <div id="background">
-        <div class="videobox">
-            <iframe  src = "Vedio_List.html" height="100%" width="100%"></iframe>
-        </div>
-    </div>
-<div style = "text-align:center;font-size:4.5vw;color:#000000;">最新貼文</div>
-    <div id = "background">
-       <div id = "twitter">
-        <a class="twitter-timeline" data-width="100%" data-height="800" data-theme="dark" href="https://twitter.com/Naika_Gvtfe?ref_src=twsrc%5Etfw">Tweets by Naika_Gvtfe</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-    </div>
-    <div id = "footer"><div id = "Social_link_background">
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.youtube.com/channel/UCBhSXkzFQP-925QUaaFi03A"><img src = "image/naika_logo(2).png" width = "100%" title = "YouTube主頻道"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.youtube.com/channel/UCM42DxZpt3CmCERUIjO8_Rg"><img src = "image/latte_logo(3).png" width = "100%"title = "YouTube精華頻道"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://twitter.com/Naika_Gvtfe"><img src = "image/twitter_logo(2).png" width = "100%"title = "Twitter"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.plurk.com/m/Naika_Gvtfe"><img src = "image/plurk_logo.png" width = "100%"title = "噗浪"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://misskey.io/@Naika_Gvtfe"><img src = "image/misskey_logo.png" width = "100%"title = "MissKey"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://www.twitch.tv/naika_gvtfe/about"><img src = "image/twitch_logo(2).png" width = "100%"title = "Twitch"></a></div></div>
-                <div class = "Logo"><div class = "Logo_image"><a href = "https://discord.gg/mZhC2ECgDc"><img src = "image/discord_logo.png" width = "100%"title = "我的Discord群"></a></div></div>
-                </div></div>
 </div>
 </body>
 </html>
