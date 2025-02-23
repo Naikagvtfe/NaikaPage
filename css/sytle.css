@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header a { 
+    font-size: 30px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px 10px;
+    transition: 1s;
+}
+header a:hover {
+    color: rgb(139, 189, 255);
+    padding: 0px 30px 10px;
+}
+.Link {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    background: linear-gradient(to bottom,black,rgba(0, 0, 0, 0));
+    top: 0;
+    height: 5vh;
+    width: 100vw;
+}
+header li {
+    display: inline;
+}
+.videobox {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 110vh;
+    z-index: -1;
+}
+/* 三大標題文字 */
+h1 a { 
+    font-size: 100px;
+    font-family:"Noto Serif TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    letter-spacing:0.5em;
+}
+/*.title_div a:hover {
+    font-size: 120px;
+    color: black;
+}*/
+/* 內容文字 */
+h2  {
+    font-size: 100px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+h3  {
+    font-size: 70px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: transparent;
+    background:linear-gradient(to left,rgb(139, 189, 255),rgb(255, 255, 255));
+    background-clip: text;
+    text-decoration: none;
+}
+h4  {
+    font-size: 30px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    word-break: break-all;
+}
+.info_div p {
+    font-size: 50px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/* 三大標題div */
+.title_div {
+    height: 20vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.title_div:hover {
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0),rgba(139, 189, 255, 0.5),rgba(0, 0, 0, 0));
+}
+.title_div_background {
+    position: absolute;
+    padding: 0;
+    height: 20vh;
+    width: 100%;
+    background-image: url("./../img/title_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+/* 內容div */
+.info_div_background {
+    width: 100%;
+    height: auto;
+    background-image: url("./../img/background.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info_div {
+    height: auto;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter:blur(5px) ;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+.info_div_1 {
+    height: auto;
+    width: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_div_2 {
+    height: auto;
+    width: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 25px;
+}
+.video_div {
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v_hr {
+    min-height:200px;
+    height: auto;
+    width:1px;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+}
+.img_download {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 25px;
+    background-image: url("./../img/DR_logo.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+    color:transparent;
+    font-size: 50px;
+    font-family:"Noto Sans TC",sans-serif ;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 75px;
+}
+.img_download:hover {
+    font-size: 70px;
+    color: white;
+    text-shadow: black 0em 0em 0.2em;
+    height: 350px;
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+details + dl {
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+[open] + dl {
+    max-height:300vh ;
+}
+
+/* 以下為響應式 */
+@media screen and (max-width: 1080px){
+    h2 { font-size: 60px;}
+    h3 { font-size: 40px;}
+    h4 { font-size: 20px;}
+    .img_download:hover { 
+        height: 325px;
+        width: 325px;
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+    }
+    
+}
